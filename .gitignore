@@ -1,0 +1,20 @@
+# Fichiers générés par macOS
+.DS_Store
+
+# Dossiers générés par macOS
+.AppleDouble/
+.LSOverride
+
+# Fichiers créés par l'éditeur de texte Visual Studio Code
+.vscode/
+
+# Fichiers temporaires
+*~
+
+# Fichiers de sauvegarde
+*.bak
+*.swp
+
+# Dossiers spécifiques à ignorer
+/node_modules/
+/vendor/
