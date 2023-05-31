@@ -48,10 +48,6 @@
     </footer>
 
   </div>
-
-
-
-
 </body>
 
 </html>

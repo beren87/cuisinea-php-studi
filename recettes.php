@@ -2,7 +2,6 @@
   require_once('templates/header.php');
   require_once('lib/recipe.php');
 
-
   $recipes = getRecipes($pdo);
 
 ?>
@@ -11,14 +10,10 @@
         <h1>Liste des recettes</h1>
     </div>
 
-
     <div class="row">
-
       <?php foreach ($recipes as $key => $recipe) { 
         include('templates/recipe_partial.php');
       } ?>
-
-
     </div>
 
 <?php

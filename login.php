@@ -5,10 +5,6 @@
   $errors = [];
   $messages = [];
 
-
-
-
-
   if (isset($_POST['loginUser'])) {
 
     $user = verifyUserLoginPassword($pdo, $_POST['email'], $_POST['password']);
@@ -40,7 +36,6 @@
     </div>
 <?php } ?>
 
-
 <form method="POST" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="email" class="form-label">Email</label>
@@ -53,10 +48,7 @@
     </div>
 
     <input type="submit" value="Connexion" name="loginUser" class="btn btn-primary">
-
-
 </form>
-
 
 <?php
 require_once('templates/footer.php');

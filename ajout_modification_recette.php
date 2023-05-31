@@ -5,13 +5,9 @@ if(!isset($_SESSION['user'])) {
     header('location: login.php');
 }
 
-
 require_once('lib/tools.php');
 require_once('lib/recipe.php');
 require_once('lib/category.php');
-
-
-
 
 $errors = [];
 $messages = [];
@@ -76,7 +72,6 @@ if (isset($_POST['saveRecipe'])) {
     </div>
 <?php } ?>
 
-
 <form method="POST" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="title" class="form-label">Titre</label>
@@ -101,7 +96,6 @@ if (isset($_POST['saveRecipe'])) {
             <?php foreach ($categories as $category) { ?>
                 <option value="<?=$category['id']; ?>" <?php if ($recipe['category_id'] == $category['id']) { echo 'selected="selected"'; } ?>><?=$category['name'];?></option>
             <?php } ?>
-
         </select>
     </div>
     <div class="mb-3">
@@ -109,8 +103,6 @@ if (isset($_POST['saveRecipe'])) {
         <input type="file" name="file" id="file">
     </div>
     <input type="submit" value="Enregistrer" name="saveRecipe" class="btn btn-primary">
-
-
 </form>
 
 <?php

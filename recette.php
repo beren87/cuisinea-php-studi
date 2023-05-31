@@ -4,7 +4,6 @@ require_once('lib/tools.php');
 require_once('lib/recipe.php');
 
 $id = (int)$_GET['id'];
-
 $recipe = getRecipeById($pdo, $id);
 
 if ($recipe) {
